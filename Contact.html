@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="">
+    <title>Our Portfolio</title>
+    <style>
+        /* Resetting default margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #ffffff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 1rem;
+        }
+
+        /* Main content styles */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        main video {
+            width: 100%;
+            height: auto;
+        }
+
+        aside {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .section-1 {
+                width: 60%;
+            }
+
+            .section-header {
+                width: 40%;
+            }
+
+            .site-menu-link {
+                margin: 0 10px;
+            }
+
+            .image-3 {
+                width: 30%;
+            }
+
+            #logo {
+                width: 30%;
+                margin-left: 4rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section-1 {
+                width: 70%;
+            }
+
+            .section-header {
+                width: 30%;
+            }
+
+            .image-3 {
+                width: 25%;
+            }
+
+            #logo {
+                width: 25%;
+                margin-left: 4rem;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .section-1 {
+                width: 80%;
+            }
+
+            .section-header {
+                width: 20%;
+            }
+
+            .image-3 {
+                width: 20%;
+            }
+
+            #logo {
+                width: 20%;
+                margin-left: 4rem;
+            }
+        }
+
+        form {
+            color: #323232;
+            margin: 1rem auto;
+            padding: 2rem;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.1rem;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form textarea {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        form input[type="submit"] {
+            height: 60px;
+            background-color: #313131;
+            margin-left: 60px;
+            margin-right: 60px;
+            border: none;
+            color: #ffffff;
+            padding: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 0.2rem;
+            font-size: 20px;
+        }
+
+
+        form input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img id="logo" src="./src/image/Mula GlobalWt.png"
+                style="width: 70%; margin-left: 4rem;"></a>
+        <nav style="margin-right: 3rem; width: 350px;">
+            <a href="index.html" style="margin-right:3rem;">HOME</a>
+            <a href="Project.html" style="margin-right: 3rem;">PROJECT</a>
+            <a href="Contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <main style="display: grid; justify-content: center;">
+        <form style="width: 100vh;">
+            <h2 style="text-align: center;">Contact Us</h2>
+            <p style="text-align: center;">We will get back to you asap!</p>
+            <label for="fname" style="text-align: left;">First-Last Name:</label>
+            <input type="text" id="fname" name="firstname"><br>
+            <label for="email" style="text-align: left;">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="phone" style="text-align: left;">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <label for="message" style="text-align: left;">Message:</label><br>
+            <textarea id="message" name="message" style="height: 99px;"></textarea><br>
+            <input type="submit" value="SEND">
+            <p style="color: #383838; text-align: center;">You may also call us at 0966566414</p>
+        </form>
+    </main>
+
+
+    <footer>
+
+        <div class="main-footer-content"
+            style="width: 100%;margin: 0 auto; background-color: #f4f1ed; padding: 40px;line-height: 19px;font-size: 16px;flex-direction: column; border-bottom: none;display: flex; ;">
+
+            <section class="footer-icons">
+                <a class="footer-some"
+                    href="https://www.instagram.com/mula_work.official?igsh=MXE2azFid2g5Ymh6Yg%3D%3D&utm_source=qr"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/instagram.svg"
+                        alt="Visit LINDBERG on Instagram" /></a>
+                <a class="footer-some" href="https://www.facebook.com/profile.php?id=61550963670905"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/facebook.svg"
+                        alt="Visit LINDBERG on Facebook" /></a>
+                <a class="footer-some" href="https://www.linkedin.com/in/mulawork-thailand-194b16245/"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/linkedin.svg"
+                        alt="Visit LINDBERG on LinkedIn" /></a>
+                <a class="footer-some" href="#"
+                    onclick="document.getElementById('wechatqr').style.display = 'block'; return false;"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/wechat.svg" alt="Visit LINDBERG on WeChat" /></a>
+                <img class="footer-some" id="wechatqr" src="./src/image/line.jpg "
+                    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1000; opacity: 1; object-fit: none; background: gray; display:none; pointer-events:all"
+                    onclick="this.style.display = 'none'" />
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+   (function(){
+      emailjs.init("-WkPJZqK-znRfj7Ex"); // Replace with your EmailJS user ID
+
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+         event.preventDefault();
+
+         // Collect user input from the form
+         const formData = {
+            name: document.getElementById('fname').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            message: document.getElementById('message').value
+         };
+
+         // Send the email
+         emailjs.send('service_46ms0oh', 'template_g357kux', formData)
+            .then(function(response) {
+               console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+               console.log('FAILED...', error);
+            });
+      });
+   })();
+</script>

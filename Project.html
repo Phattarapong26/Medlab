@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <style>
+        /* Resetting default margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            align-items: center;
+            background-color: #181818;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #181818;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #f4f1ed;
+        }
+
+        header a {
+            text-decoration: none;
+            background-color: #181818;
+            color: #f4f1ed;
+            margin-right: 1rem;
+        }
+
+        /* Main content styles */
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        main video {
+            width: 100%;
+            height: auto;
+        }
+
+        aside {
+            display: grid;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Footer styles */
+        footer {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .section-1 {
+                width: 60%;
+            }
+
+            .section-header {
+                width: 40%;
+            }
+
+            .site-menu-link {
+                margin: 0 10px;
+            }
+
+            .image-3 {
+                width: 30%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .section-1 {
+                width: 70%;
+            }
+
+            .section-header {
+                width: 30%;
+            }
+
+            .image-3 {
+                width: 25%;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .section-1 {
+                width: 80%;
+            }
+
+            .section-header {
+                width: 20%;
+            }
+
+            .image-3 {
+                width: 20%;
+            }
+
+            #blogG {
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                margin: auto;
+                padding: auto;
+            }
+
+            .image-area {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .image-area img {
+                width: 300px;
+                height: 200px;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+
+            .text-area {
+                flex: 1;
+            }
+
+            .text-area h2 {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .text-area p {
+                margin-bottom: 10px;
+            }
+
+            .text-area ul {
+                margin-bottom: 10px;
+                padding-left: 20px;
+            }
+
+            .text-area li {
+                margin-bottom: 5px;
+            }
+
+            .text-area button {
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .text-area button:hover {
+                background-color: #0056b3;
+            }
+
+
+            .readmore-button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .readmore-button:hover {
+                background-color: #0056b3;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="./src/image/Mula Global.png " style="width: 70%; margin-left: 4rem;"></a>
+        <nav style="margin-right: 3rem; width: 350px;">
+            <a href="index.html" style="margin-right:3rem;">HOME</a>
+            <a href="Project.html" style="margin-right: 3rem;">PROJECT</a>
+            <a href="Contact.html">CONTACT</a>
+        </nav>
+    </header>
+    <!------ done -->
+    <main style="display: grid;">
+
+        <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="./src/image/realheader.mp4" type="video/mp4">
+        </video>
+        <!------ done -->
+
+        <aside style="display: grid; justify-content: center; text-align: center;">
+
+            <!------ Start -->
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/state.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!------ done -->
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/role.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!------ done -->
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/perso.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!------ done -->
+
+            <div class="image-area" style="display: grid; grid-template-columns: 1fr 1fr;">
+
+                <div class="image" style="display: grid;">
+                    <video id="video-player" autoplay muted
+                        style="height: auto;width:70%; object-fit: cover; padding-left: 30%;">
+                        <source src="./src/image/FUNC.mov" type="video/mp4">
+                    </video>
+                </div>
+                <!------ done -->
+                <div class="text-area" style="display: grid; justify-content: flex-start;">
+                    <div class="inner-text-area" style="padding: 20px; border-radius: 5px; width: 50%; padding: 10%;">
+                        <p>
+                            This is a sample feature that we developed to solve the main problem of treasury management.
+                            Such as automatic stock cutting system, real-time data access, QR code system to reduce
+                            errors in data management in the system, notification system to solve problems of
+                            out-of-stock or expired drugs.
+                        </p>
+                        <a href="https://shorturl.at/xBMW3" class="readmore-button"
+                            style="margin-top: 2rem;border-radius: 25px; background-color:#92846A">Readmore</a>
+                    </div>
+                </div>
+            </div>
+            <!------ done -->
+            <div class="image-area" style="display: grid; grid-template-columns: 1fr 1fr;">
+
+                <div class="text-area" style="display: grid; justify-content: flex-end;">
+                    <div class="inner-text-area"
+                        style="padding: 20px; border-radius: 5px; width: 40%; padding-left: 40%;">
+                        <p>
+                            This is some features we added to support functionality and use within the system. In order
+                            to work more smoothly
+                        </p>
+                        <a href="https://shorturl.at/xBMW3" class="readmore-button"
+                            style="margin-top: 2rem;border-radius: 25px; background-color: #92846A">Readmore</a>
+                    </div>
+                </div>
+
+                <div class="image" style="display: grid;">
+                    <video id="video-player" autoplay muted style="height: auto;width:70%; object-fit: cover;">
+                        <source src="./src/image/non_f.mov" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <!------ done -->
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/login.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/des.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/Stock.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/detail.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/add.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/other.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div id="blog">
+                <video id="video-player" autoplay muted style="width: 100%; height: 100%; object-fit: cover;">
+                    <source style="margin-left: 2rem;" src="./src/image/Loca.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </aside>
+    </main>
+
+    <footer>
+
+        <div class="main-footer-content"
+            style="width: 100%;margin: 0 auto; background-color: #f4f1ed; padding: 40px;line-height: 19px;font-size: 16px;flex-direction: column; border-bottom: none;display: flex; ;">
+
+            <section class="footer-icons">
+                <a class="footer-some"
+                    href="https://www.instagram.com/mula_work.official?igsh=MXE2azFid2g5Ymh6Yg%3D%3D&utm_source=qr"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/instagram.svg"
+                        alt="Visit LINDBERG on Instagram" /></a>
+                <a class="footer-some" href="https://www.facebook.com/profile.php?id=61550963670905"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/facebook.svg"
+                        alt="Visit LINDBERG on Facebook" /></a>
+                <a class="footer-some" href="https://www.linkedin.com/in/mulawork-thailand-194b16245/"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/linkedin.svg"
+                        alt="Visit LINDBERG on LinkedIn" /></a>
+                <a class="footer-some" href="#"
+                    onclick="document.getElementById('wechatqr').style.display = 'block'; return false;"><img
+                        src="https://cdn.lindberg.com/assets/2023/svg/wechat.svg" alt="Visit LINDBERG on WeChat" /></a>
+                <img class="footer-some" id="wechatqr" src="./src/image/line.jpg "
+                    style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1000; opacity: 1; object-fit: none; background: gray; display:none; pointer-events:all"
+                    onclick="this.style.display = 'none'" />
+            </section>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
