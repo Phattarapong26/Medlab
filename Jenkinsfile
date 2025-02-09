@@ -24,5 +24,10 @@ pipeline {
                 echo "Deploying the application..."
             }
         }
+        stage('Deployment test') {
+            steps {
+                echo "Running tests..."
+            }
+        }
     }
 }
