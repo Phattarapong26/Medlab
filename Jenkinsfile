@@ -2,13 +2,18 @@ pipeline {
     agent any
 
     stages {
+        stage('Checkout') {
+            steps {
+                echo "Clone Code the project From Git"
+            }
+        }
         stage('Build') {
             steps {
                 echo "Building the project..."
             }
         }
 
-        stage('Test') {
+        stage('Unit Tests') {
             steps {
                 echo "Running tests..."
             }
