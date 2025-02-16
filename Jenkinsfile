@@ -5,8 +5,17 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Clone Code the project From Git"
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']], 
+                    userRemoteConfigs: [[
+                        credentialsId: 'PM Pattarapong', 
+                        url: 'https://github.com/Phattarapong26/Medlab.git' 
+                    ]]
+                ])
             }
         }
+
         stage('Build') {
             steps {
                 echo "Building the project..."
@@ -24,6 +33,7 @@ pipeline {
                 echo "Deploying the application..."
             }
         }
+
         stage('Deployment test') {
             steps {
                 echo "Running tests..."
